@@ -1,9 +1,79 @@
 body{
     padding:0;
     margin:0;
-    font-family: 'Playfair Display', serif;
-    background-color: #f6f6f6;
+    font-family:'lato';
   }
   *, *::before, *::after{
     box-sizing:border-box;
+  }
+
+  .desktop{
+
+    display:block;
+    
+    @media(max-width:767px){
+        display:none;
+    }
+
+    .slider-container{
+      display: flex;
+      align-items: center;
+
+        .slider-left, .slider-right{
+            width:50%;
+        }
+
+        .slider-right{
+           
+            .slider-text{
+               
+                h2{
+                    font-size:32px;
+                    font-weight:400;
+                    color:#1CA8F3;
+
+                     .big{font-weight:600}
+                     
+                }
+            }
+        }
+
+        .slider-left{
+           
+            .slider-cards{
+                float:right;
+                padding:10% 5% 20%;
+                position:relative;
+                text-align:right;
+
+                div:nth-child(2){
+                    margin:-22% -10%;
+                }
+            }
+        }
+    }
+  }
+
+
+  .mobile{
+    .slider-container{
+      text-align:center;
+      .slider-cards{
+
+        #second{
+          margin:10%;
+        }
+
+        #first{
+              
+          margin: 2% 35%;
+          position: relative;
+          z-index: -10;
+          float:left;
+          }
+        
+        }
+        
+      
+    }
   }

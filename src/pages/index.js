@@ -1,8 +1,12 @@
 import React from "react"
 import '../components/index.scss'
+import Header from '../components/Slider'
 
 const IndexPage = () => (
-  <>index</>
+  <>
+
+    <Header />
+    container</>
 )
 
 export default IndexPage
